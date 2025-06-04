@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ames Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ames Coffee Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Freshly Brewed Coffee in the Heart of Ames</h2>
+        <p>Come for the coffee, stay for the community.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a locally owned coffee shop passionate about providing great coffee and a cozy space for our neighbors to gather. Whether you need a morning pick-me-up or a place to unwind, we have you covered!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <button id="toggle-menu">Show Menu</button>
+        <ul id="menu-list" class="hidden">
+            <li>Espresso</li>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Mocha</li>
+            <li>Tea Selection</li>
+            <li>Pastries</li>
+        </ul>
+    </section>
+
+    <section id="location">
+        <h2>Find Us</h2>
+        <p>123 Main Street, Ames, Iowa</p>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.433844602373!2d-93.6208699846227!3d42.03078157920845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee734188699a7f%3A0x1bedb80c21b5c5f5!2sAmes%2C%20IA!5e0!3m2!1sen!2sus!4v1596103569332!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:hello@amescoffeeshop.com">hello@amescoffeeshop.com</a></p>
+        <p>Phone: (555) 123-4567</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ames Coffee Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
