@@ -11,3 +11,4 @@ This repository contains a single-page website for the fictional **Ames Coffee S
 ## Usage
 
 Simply clone this repository and open `index.html` in a modern browser. No build step is required.
+

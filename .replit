@@ -1,0 +1,16 @@
+modules = ["web", "nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Start Web Server"
+
+[[workflows.workflow]]
+name = "Start Web Server"
+author = 20346258
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python -m http.server 5000"

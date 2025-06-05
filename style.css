@@ -1,7 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
+
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -12,20 +14,24 @@ header {
     background-color: #6f4e37;
     color: #fff;
     padding: 1rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+
     margin: 0;
     display: flex;
 }
 
 header nav li {
+
     margin: 0 1rem;
 }
 
@@ -34,9 +40,11 @@ header nav a {
     text-decoration: none;
 }
 
+
 .nav-toggle {
     display: none;
 }
+
 
 #hero {
     background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1950&q=80');
@@ -45,11 +53,13 @@ header nav a {
     color: #fff;
     padding: 6rem 1rem;
     text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
+
 }
 
 section {
@@ -66,10 +76,12 @@ button {
     cursor: pointer;
 }
 
+
 .cta {
     margin-top: 1rem;
     font-size: 1.1rem;
 }
+
 
 .hidden {
     display: none;
@@ -119,3 +131,4 @@ form input, form textarea {
         margin-top: 0.5rem;
     }
 }
+
