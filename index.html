@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Fresh coffee and community in Ames, Iowa">
+    <meta name="keywords" content="coffee, Ames Iowa, cafe">
+    <meta property="og:title" content="Ames Coffee Shop">
+    <meta property="og:description" content="Fresh coffee and community in Ames, Iowa">
+
     <title>Ames Coffee Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Ames Coffee Shop</h1>
-        <nav>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav id="main-nav">
+
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -18,11 +26,11 @@
             </ul>
         </nav>
     </header>
-
-    <section id="hero">
+  
+    <section id="hero" aria-label="Coffee beans and a steaming mug">
         <h2>Freshly Brewed Coffee in the Heart of Ames</h2>
         <p>Come for the coffee, stay for the community.</p>
-    </section>
+        <button class="cta">Order Online</button>
 
     <section id="about">
         <h2>About Us</h2>
@@ -31,7 +39,9 @@
 
     <section id="menu">
         <h2>Our Menu</h2>
-        <button id="toggle-menu">Show Menu</button>
+
+        <button id="toggle-menu" aria-expanded="false">Show Menu</button>
+
         <ul id="menu-list" class="hidden">
             <li>Espresso</li>
             <li>Americano</li>
